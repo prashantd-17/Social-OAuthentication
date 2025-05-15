@@ -3,6 +3,14 @@
 <div *ngIf="userInfo">
     <h3>Welcome, {{ userInfo.name }}</h3>
     <p>Email: {{ userInfo.email }}</p>
-    <img [src]="userInfo.picture" width="100" />
+    <img [src]="userInfo.picture" width="100"/>
   </div>
+
+  <button (click)="loginWithFacebook()">Login with Facebook</button>
+
   
+
+  <!-- <fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button> -->
